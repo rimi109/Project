@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class GravityScript : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject Gravity; 
 
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerStay(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("string"))
+        {
+            Drawin();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Drawin()
     {
-        
+        //if ()
+        //{
+
+        //}
     }
 }
